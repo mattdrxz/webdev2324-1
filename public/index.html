@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="appbar">
+        <h1>Sweet Ice Tea Recipe</h1>
+    </div>
+    <div class="content">
+        <img src="https://asset.kompas.com/crops/GRGOpdUcySMF4sTvMlSEpJpFcTM=/0x0:4939x3293/750x500/data/photo/2022/09/25/63300cfd403f0.jpg"
+            alt="cake">
+        <div class="text">
+            <h2>Sweet Ice Tea</h2>
+            <h3>Ingredient</h3>
+            <ul>
+                <li>
+                    <div>
+                        <div>Tea</div>
+                        <div>a Pouch</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+
+                        <div>Sugar</div>
+                        <div>3 Tbsp</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>Hot Water</div>
+                        <div>a Glass</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>Ice</div>
+                        <div>6-10 Cubes</div>
+                    </div>
+                </li>
+            </ul>
+            <h3>How to Make</h3>
+            <ol>
+                <li>Brew the tea with hot water</li>
+                <li>Put 3 Tbsp sugar to the tea water</li>
+                <li>Mix it until the sugar dissolved with the tea</li>
+                <li>Put some cubes of ice</li>
+                <li>Voila! You're done :)</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+<style>
+    /* Removes default padding */
+    *,
+    html,
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #424242;
+    }
+
+    html {
+        background-color: #F5F5F5;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 32px;
+    }
+
+    h1 {
+        color: #000000;
+    }
+
+    h2,
+    h3 {
+        padding: 16px;
+    }
+
+    img {
+        width: 100vw;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    .appbar {
+        padding: 16px;
+        background-color: #FAFAFA;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    ul li div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ol,
+    ul {
+        padding: 0 16px;
+        padding-left: 48px;
+    }
+
+    div.content,
+    div.text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        img {
+            width: 50vw;
+            flex: 1;
+        }
+
+        div.content {
+            flex-direction: row;
+            width: 100vw;
+        }
+
+        div.text {
+            flex: 1;
+        }
+    }
+</style>
+
+</html>
